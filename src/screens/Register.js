@@ -6,6 +6,7 @@ function Register(){
     const history = useNavigate()
     const [name,setname] = useState('')
     const [email,setemail] = useState('')
+    const [password, setpassword] = useState('')
 
     async function registerUser(e){
         e.preventDefault()
@@ -33,24 +34,24 @@ function Register(){
                 Register
             </h1>
         <form onSubmit={registerUser}>
-        <input class="box" 
+        <input className="box" 
         value = {name} 
         onChange={(e)=>setname(e.target.value)} type="text" 
         placeholder="Name" />
         <br></br>
-        <input class="box" 
+        <input className="box" 
         value = {email} 
         onChange={(e)=>setemail(e.target.value)} 
         type="email" 
         placeholder="Email" />
         <br></br>
-        <input class="box" 
+        <input className="box" 
         value = {password} 
         onChange={(e)=>setpassword(e.target.value)} 
         type="password" 
         placeholder="Password" />
         <br/>
-        <input class="button" 
+        <input className="button" 
         type="submit" 
         value="Register"/>
         <br/>

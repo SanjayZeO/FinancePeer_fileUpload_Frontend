@@ -9,6 +9,7 @@ const Main = () =>{
     const history = useNavigate()
 
     useEffect(() => {
+
         const token = localStorage.getItem('token')
 
         if(token){
@@ -17,18 +18,19 @@ const Main = () =>{
                 localStorage.removeItem('token')
                 history.replace('/login')
             }else{
-
+                // populateDash()
             }
+
         }
     }, [])
 
     return(
         <div id="main">
-            <div class="mainButtons">
+            <div className="mainButtons">
                 <a href="/upload">Upload Data</a>
             </div>
             <br/>
-            <div class="mainButtons">
+            <div className="mainButtons">
                 <a href="/view">View Uploaded Data</a>
             </div>
         </div>

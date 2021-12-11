@@ -36,21 +36,21 @@ function Login(){
                     Login
                 </h1>
                 <form onSubmit={loginUser}>
-                    <input class="box"
+                    <input className="box"
                     value ={email}
                     onChange={(e)=>{setemail(e.target.value)}}
                     type="email"
                     placeholder='Email'
                     />
                     <br/><br/>
-                    <input class="box"
+                    <input className="box"
                     value={password}
                     onChange={(e)=>{setpassword(e.target.value)}}
                     type="password"
                     placeholder='Password'
                     />
                     <br/><br/>
-                    <input class="button"
+                    <input className="button"
                     type="submit"
                     value="Login"
                     />

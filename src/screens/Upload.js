@@ -48,7 +48,7 @@ export default function Upload({ children }) {
   };
 
   return(
-      <div class="box">
+      <div className="box">
           <h1>Upload Json File</h1>
 
           <input type="file" onChange={handleChange} />
